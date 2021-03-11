@@ -1,0 +1,58 @@
+.poster{
+    background-color: tomato;
+    display: inherit;
+    all:initial;
+}
+
+.se-container{
+    text-align: left;
+    margin-top: 50px;
+}
+
+.create{
+    display: flex;
+    flex-direction: column;
+
+    select, option{
+        font-size: large;
+        padding: 10px;
+    }
+
+    .title{
+        width: 100%;
+    }
+
+    .des{
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .create-head{
+        height: auto;
+        display: flex;
+        cursor: pointer;
+        margin-top: 20px;
+        justify-content: flex-end;
+        align-items: center;
+
+        span{
+            margin-right: 30px;
+            font-size: 1rem;
+        }
+    }
+}
+
+.complete-overlay{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        margin-bottom: 40px;
+        font-size: 3rem;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.699);
+    }
+}

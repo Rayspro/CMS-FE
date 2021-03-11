@@ -1,0 +1,114 @@
+.single-root {
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 50px;
+    text-align: initial;
+
+    .comment {
+        min-width: 100%;
+        margin: 50px 0px;
+    }
+
+    .title {
+        font-size: 4rem;
+        margin-top: 50px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .single-dot{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .single-author {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 50px;
+        padding-right: 30px;
+
+        span {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: grey;
+            letter-spacing:8px;
+            margin-right: 20px;
+        }
+    }
+
+    .single-author span:nth-child(2) {
+        font-size: 0.7rem;
+        color: rgba(128, 128, 128, 0.452);
+        margin-right: 20px;
+    }
+
+    .comment {
+        width: 100%;
+        background-color: rgba(245, 245, 245, 0.63);
+        padding-bottom: 10px;
+
+        .post-box {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            margin: 20px;
+            background-color: white;
+
+            .post-con {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 80%;
+                text-align: start;
+            }
+
+            .post-con span:nth-child(1) {
+                margin-bottom: 5px;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+
+            .post-round {
+                font-size: 2.5rem;
+                border-style: solid;
+                width: 60px;
+                height: 60px;
+                margin-right: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+            }
+        }
+
+        .input {
+            textarea {
+                width: 100%;
+                height: 200px;
+                font-size: 1.2rem;
+                padding: 10px 20px;
+            }
+
+            .btn-comment {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+
+                span {
+                    font-size: 1rem;
+                    user-select: none;
+                    cursor: pointer;
+                    padding: 10px 20px;
+                    color: white;
+                    background-color: black;
+                }
+            }
+        }
+    }
+}

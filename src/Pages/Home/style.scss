@@ -1,0 +1,154 @@
+.root-home {
+    min-height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .noPost{
+        font-size: 3rem;
+        height: 100%;
+        font-weight: 600;
+        margin-top: 80px;
+    }
+
+    .category-home {
+        width: 100%;
+        max-width: 100%;
+        height: 50px;
+        overflow: hidden;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        border-width: 0.5px;
+        border-top-style: solid;
+        border-bottom-style: solid;
+
+        .item {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            color: rgba(27, 27, 27, 0.781);
+            width: 150px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .item-active{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            color: rgba(255, 255, 255, 0.781);
+            width: 150px;
+            margin-left: 10px;
+            cursor: pointer;
+            background-color: rgba(27, 27, 27, 0.781);
+        }
+
+        .item:hover::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            color: seashell;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .item-active {
+        }
+    }
+
+    .lg-root {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .head {
+            height: 50%;
+            overflow: hidden;
+            position: relative;
+
+            .img-back {
+                width: 100%;
+                height: 100%;
+                background-image: url("../../Assets/card.png");
+                background-size: cover;
+                border-bottom-right-radius: 150%;
+                z-index: 1;
+            }
+
+            .head-type {
+                position: absolute;
+                z-index: 10;
+                bottom: 20px;
+                right: 10px;
+                font-weight: 500;
+            }
+        }
+
+        .head-content {
+            width: 100%;
+            min-height: 50%;
+
+            .bold-data {
+                font-size: 1.15rem;
+                font-weight: 600;
+                padding: 0px 10px;
+                line-height: 25px;
+                min-height: 70px;
+                position: relative;
+                display: flex;
+                padding-top: 5px;
+                justify-content: center;
+                align-items: center;
+                user-select: none;
+            }
+
+            .bold-data::after {
+                content: "";
+                width: 30px;
+                height: 5px;
+                position: absolute;
+                top: 0;
+                background-color: tomato;
+            }
+
+            .link {
+                cursor: pointer;
+                color: blue;
+                user-select: none;
+            }
+
+            .link:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .grid-container {
+        display: grid;
+        grid-column-gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}

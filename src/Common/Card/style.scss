@@ -1,0 +1,13 @@
+.card-root{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    margin: 20px 10px;
+    transition: all 100ms linear;
+}
+
+.card-root:hover{
+    transform: scale(1.02);
+}
