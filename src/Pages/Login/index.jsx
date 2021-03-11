@@ -9,6 +9,7 @@ import {
   initNormalLogin,
   defaultSet,
 } from "../../Redux/actions/user.action";
+import {Googlr_Client_id} from "../../server.config";
 
 function Login({
   history,
@@ -104,7 +105,7 @@ function Login({
             <h1>Login</h1>
             <div className="social-container">
               <GoogleLogin
-                clientId="901733398463-b4jegmu71643b8k6s2ilbnb5uoliivlp.apps.googleusercontent.com"
+                clientId={Googlr_Client_id}
                 render={(renderProps) => (
                   <div className="social">
                     <img
